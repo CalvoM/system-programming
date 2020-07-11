@@ -34,7 +34,7 @@ int main(int argc, char** argv){
         if(write(output_fd,read_buf,read_bytes)!= read_bytes) fatal("Error while writing to file");
     }
     // Stdin once read is empty so we copy to files then use them as the input to other files.
-    if(close(output_fd)==-1 ||close(input_fd)) errExit("Error closing file");
+    if(close(output_fd)==-1 ||close(input_fd)==-1) errExit("Error closing file");
     input_fd = open(argv[i],O_RDONLY); // open the recent file copied to as the input to next
     i++;
     }
