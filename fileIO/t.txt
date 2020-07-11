@@ -1,0 +1,8 @@
+total 48K
+drwxr-xr-x 2 d1r3ct0r root 4.0K Jul 11 14:06 .
+drwxr-xr-x 9 d1r3ct0r root 4.0K Jul  9 04:40 ..
+-rw-r--r-- 1 d1r3ct0r root 2.1K Jul 10 19:46 seek_io.c
+-rw-r--r-- 1 d1r3ct0r root 1.3K Jul 10 19:08 simplecopy.c
+-rw-r--r-- 1 d1r3ct0r root  846 Jul 11 14:00 simpletee.c
+-rwxr-xr-x 1 d1r3ct0r root  27K Jul 11 14:06 stee
+-rw-r--r-- 1 d1r3ct0r root    0 Jul 11 14:06 t.txt
