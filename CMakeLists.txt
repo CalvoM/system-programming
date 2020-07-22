@@ -11,4 +11,4 @@ file(GLOB_RECURSE source_include ${CMAKE_CURRENT_SOURCE_DIR}/includes/*.c)
 project(${P_NAME} VERSION 1.0 DESCRIPTION ${DESC} LANGUAGES C)
 
 include_directories(${PROJECT_SOURCE_DIR}/includes)
-add_executable(stee fileIO/simpletee.c ${source_include})
+add_executable(scatterinput fileIO/scatterinput.c ${source_include})
