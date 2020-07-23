@@ -1,6 +1,7 @@
 #ifndef UTILS_H_
 #define UTILS_H_
 
+#define _LARGEFILE64_SOURCE
 #define _GNU_SOURCE
 #include <sys/types.h>
 #include <sys/stat.h>
