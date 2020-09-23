@@ -6,10 +6,22 @@
 // should return –1 with errno set to EBADF .
 #include "utils.h"
 
-int my_dup(int olfd){
-    int fd = fcntl(olfd,F_DUPFD_CLOEXEC,0);
+int my_dup(int oldfd){
+    int fd = fcntl(oldfd,F_DUPFD_CLOEXEC,0);
     return fd;
 
+}
+int my_dup2(int old_fd, int new_fd){
+    int status_flags = fcntl(old_fd,F_GETFL);
+    if(status_flags==-1){
+        errno=EBADF;
+        return -1;
+    }
+    int status_flags_2 = fnctl(new_fd,F_GETFL);
+    if(status_flags==status_flags_2){
+        return new_fd;
+    }
+    
 }
 int main(int argc, char** argv){
     if(argc==1 || strcmp(argv[1],"--help")==0){

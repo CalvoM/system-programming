@@ -3,6 +3,7 @@
 
 #define _LARGEFILE64_SOURCE
 #define _GNU_SOURCE
+#include <limits.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <stdio.h>
@@ -13,6 +14,8 @@
 #include <string.h>
 #include "error_functions.h"
 #include "get_num.h"
+#include <setjmp.h>
+#include <string.h>
 typedef enum{
     FALSE,
     TRUE
